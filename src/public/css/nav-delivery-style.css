@@ -1,0 +1,242 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#4E1041;
+    --cor2:#9C3084;
+    --cor3:#9C117E;
+    --cor4:#209C02;
+    --cor5:#1D4F11;
+}
+body {
+    background-color: #fff ;
+}
+
+/*--------------------------------------------*/
+
+header{
+	position: absolute;
+    width: 100%;
+    height: 70px;
+    top:0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 1px 1px 6px 0px black;
+}
+.logo{
+    
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:1200px){
+    .logo{
+        margin:3px 0px 10px -10px;
+    }
+}
+.container{
+	margin:5px 30px 5px 40px
+}
+.content-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.open-nav{
+	display: none;
+    background-color: #ffffff;
+    border: none;
+}
+nav{
+	width: 100%;
+	max-width: 980px;
+}
+nav .list-menu{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-area-de-membros{
+    text-decoration: underline;
+}
+#i-whatsapp{
+    color: #209C02;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+#i-whatsapp:hover{
+    background-color: rgb(255, 255, 255);
+}
+#i-instagram{
+    color: #5f4133;
+    font-size: 1.2rem;
+}
+#i-instagram:hover{
+    background-color: rgb(255, 255, 255);
+}
+#i-facebook{
+    color: #4267B2;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+#i-facebook:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.nav-redes-sociais{
+    display: flex;
+}
+nav .list-menu a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .7rem;
+	position: relative;
+	color: var(--cor2);
+	padding: 5px 10px ;
+	border-radius: 8px;
+    text-transform: uppercase;
+	transition:  .3s;
+
+}
+nav .list-menu a:hover{
+	background-color: var(--cor2);
+	color: #fff;	
+}
+
+#i-whatsapp-mobile{
+    display: none;
+}
+#i-instagram-mobile{
+    display: none;
+}
+#i-facebook-mobile{
+    display: none;
+}
+
+
+@media(max-width:1000px){
+    header{
+        height: 60px;
+        top:0;
+        z-index: 1000;
+    }
+	nav{
+		position: fixed;
+		height: 100vh;
+        overflow-y: scroll;
+		top:60px;
+		left:100%;
+		background-color: #9C117E;
+        transition: .7s;
+        margin-left:70px ;
+        box-shadow: 0px 2px 12px -2px black;
+        border-radius: 0px 0px 0px 10px;
+        
+    }
+    .open-nav.active ~ nav{
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+        overflow-y: scroll;
+		top:60px;
+		left:0%;
+		background-color: #9C117E;
+        transition: .7s;
+        margin-left:70px ;
+        box-shadow: 0px 2px 12px -2px black;
+        border-radius: 0px 0px 0px 10px;
+        z-index: 3000;
+    }
+    .container .logo{
+        margin: auto;
+    }
+	nav .list-menu a{
+        display: block;
+        width:150px;
+        text-align: center;
+        margin: 0 40px 0 0px;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding: 5px 10px ;
+        border-radius: 8px;
+        transition:  .3s;
+        margin-top: 10px;
+	}
+    nav .list-menu{
+        flex-direction: column;
+        padding: 40px 0 0 0;
+    }
+    .open-nav{
+        position: relative;
+        display: block;
+        width:40px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .open-nav .line{
+        position: absolute;
+        width:100%;
+        height: 4px;
+        background-color: #9C117E;
+        left: 0;
+        border-radius: 4px;
+    }
+    .open-nav .line.line_1{
+        top:0;
+        height: 4px;
+    }
+    .open-nav .line.line_2{
+        top:50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        height: 4px;
+    }
+    .open-nav .line.line_3{
+        bottom:0;
+        height: 4px;
+    }
+    .btn-area-de-membros{
+        text-decoration: none;
+    }
+
+
+
+
+/*Redes sociais mobile*/
+
+    #i-whatsapp{
+        display:  none;
+    }
+    #i-instagram{
+        display:  none;
+    }
+    #i-facebook{
+        display:  none;
+    }
+
+    
+
+    .lista-menu-mobile{
+        display: flex;
+    }
+
+    #i-whatsapp-mobile,#i-instagram-mobile, #i-facebook-mobile {
+        display: flex;
+    }
+    #i-whatsapp-mobile a,#i-instagram-mobile a,#i-facebook-mobile a{
+        border: none;
+        width: 35px;
+        font-size: 1.5rem;
+    }
+    
+}

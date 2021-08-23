@@ -1,0 +1,30 @@
+
+.faq {
+	text-align: center;
+	padding: 20px;
+}
+.titulo-faq {
+	font-size: 1.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+#faq-box1 h1, #faq-box2 h1, #faq-box3 h1, #faq-box4 h1, #faq-box5 h1, #faq-box6 h1{
+	color: #000000ce;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid #9C117E;
+	border-radius: 10px 10px 0px 0px;
+	padding: 10px;
+}
+#duvida1, #duvida2, #duvida3, #duvida4, #duvida5, #duvida6{
+	display: none;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	background-color: #9C117E;
+	color: #fff;
+	border-radius: 0px 0px 10px 10px;
+}

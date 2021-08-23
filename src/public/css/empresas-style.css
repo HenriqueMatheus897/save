@@ -1,0 +1,225 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#4E1041;
+    --cor2:#9C3084;
+    --cor3:#9C117E;
+    --cor4:#209C02;
+    --cor5:#1D4F11;
+}
+body {
+    background-color: rgb(255, 255, 255) ;
+	
+}
+main{
+	max-width: 1080px;
+	min-height: 320px;
+	margin: auto;
+}
+
+
+.titulo{
+    margin-top:120px;
+    text-align: center;
+}
+.titulo h1{
+    margin: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+.titulo img {
+    position: relative;
+    width: 100%;
+}
+.titulo h2{
+    position: relative;
+    top: -160px;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+.titulo h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.titulo h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px;
+}
+/*--------------------------------*/
+
+.vantagens{
+    text-align: center;
+    margin-top: 60px;
+    
+}
+.vantagens h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    
+}
+.container1{
+    display: flex;
+    text-align: center;
+    margin: auto;
+	justify-content: space-between;
+    width: 100%;
+	max-width: 900px;
+    padding: 20px;
+}
+
+.vantagens img {
+    height: 250px;
+    margin-top: 20px;
+    margin: 10px;
+}
+.vantagens p{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    margin-top: -50px;
+    padding: 10px;
+}
+
+@media(max-width: 850px){
+    .container1{
+        display: block;
+    }
+    .vantagens img {
+        height: 400px;
+    }
+    .titulo img {
+        width: 90%;
+    }
+    .titulo h2{
+        position: relative;
+        top: -230px;
+        margin: 0px 20px 0px 20px;
+    }
+    .container1 img{
+        height: 300px;
+        margin:20px
+    }
+    .vantagens p{
+        width: 30%;
+        font-size: 1.4rem;
+        margin-top: -60px;
+        padding: 10px;
+    }
+}
+@media(max-width: 600px){
+    .vantagens p{
+        width: 50%;
+        font-size: 1.4rem;
+        margin-top: -60px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 430px){
+    .titulo h2{
+        font-size: 1.7rem;
+        top: -160px;
+    }
+    .titulo h4{
+        font-size: 1.4rem;
+    }
+    .container1{
+        padding: 10px;
+    }
+
+    .container1 img{
+        height: 250px;
+        margin:10px
+    }
+}
+
+/*--------------------------------Orçamento----------------------------*/
+
+.box-orcamento h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 30px;
+}
+#container-orcamento{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #9c117e;
+    padding: 40px;
+
+}
+#container-orcamento label{
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 300px;
+}
+#container-orcamento input{
+    display: block;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+    width: 300px;
+}
+
+#container-orcamento form{
+    text-align: left;
+}
+
+#container-orcamento label {
+    margin-top:20px;
+    margin-bottom: -10px;
+}
+#nome, #nome-empresa, #email, #numero{
+    border-radius: 3px;
+}
+
+#enviar{
+    margin-top:40px;
+    background-color: #fff;
+    color: #9c117e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9px;
+    width: 200px;
+}
+#nome, #nome-empresa, #email, #numero{
+    height: 30px;
+    padding: 5px;
+}
+
+#mensagem{
+    height: 70px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+@media(max-width: 400px){
+    #container-orcamento label{
+        width: 90%;
+    }
+    #container-orcamento input{
+        width: 100%;
+    }
+}

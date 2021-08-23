@@ -1,0 +1,139 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#4E1041;
+    --cor2:#9C3084;
+    --cor3:#9C117E;
+    --cor4:#209C02;
+    --cor5:#1D4F11;
+}
+body {
+    background-color: rgb(255, 255, 255) ;
+	
+}
+main{
+	max-width: 1080px;
+	min-height: 320px;
+	margin: auto;
+}
+h1{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin: 30px;
+    margin-top: 100px;
+}
+p{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin: 30px;
+}
+
+
+
+.box-orcamento{
+    display: flex;
+    background-color: #ffffff;
+}
+
+#container-orcamento{
+    margin-bottom: 50px;
+    background-color: #9c117e;
+    padding: 40px;
+
+}
+#container-orcamento label{
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 300px;
+}
+#container-orcamento input{
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+    width: 300px;
+}
+
+#container-orcamento form{
+    text-align: left;
+}
+
+#container-orcamento label {
+    margin-top:20px;
+    margin-bottom: -10px;
+}
+#nome, #nome-empresa, #email, #numero{
+    border-radius: 3px;
+}
+
+#enviar{
+    margin-top:40px;
+    background-color: #fff;
+    color: #9c117e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9px;
+    width: 200px;
+}
+#nome, #nome-empresa, #email, #numero{
+    height: 30px;
+    padding: 5px;
+}
+
+#mensagem{
+    height: 70px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.informacoes{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 30px;
+    margin-left: 160px;
+}
+
+@media(max-width: 800px){
+    .box-orcamento{
+        display: block;
+       
+    }   
+    #container-orcamento label{
+        width: 300px;
+        margin: auto;
+    }
+    #container-orcamento input{
+        width: 300px;
+    }
+    .informacoes{
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        margin: 30px;
+    }
+}
+@media(max-width: 400px){
+   
+ 
+    #container-orcamento label{
+        width: 90%;
+    }
+    #container-orcamento input{
+        width: 90%;
+    }
+    .informacoes{
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        margin: 30px;
+    }
+}

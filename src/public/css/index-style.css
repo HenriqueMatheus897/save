@@ -1,0 +1,500 @@
+﻿@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#4E1041;
+    --cor2:#9C3084;
+    --cor3:#9C117E;
+    --cor4:#209C02;
+    --cor5:#1D4F11;
+}
+body {
+    background-color: #fff ;
+	
+}
+main{
+	max-width: 1080px;
+	min-height: 320px;
+	margin: auto;
+}
+/*------------------------------------imagem header----------------------------------*/
+.imagem1{
+    width: 100%;
+    margin-top:60px;
+	display: inline;
+	z-index: 900;
+}
+
+
+/*---------------------------------Headline---------------------------*/
+
+.headline{
+	position: absolute;
+	margin-top: -50%;
+	width: 100%;
+	z-index: 100;
+	padding: 50px 200px 20px 60px;
+	
+}
+
+.texto-na-imagem{
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 15px;
+	padding: 5px;
+	font-size: 2.3rem;
+	font-weight: 800;
+	text-shadow: 2px 2px 3px black;
+	display: block;
+	margin: auto;
+	z-index: 0;
+}
+
+.headline a{
+	background-color: #fcb037;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-size: 1.3rem;
+	font-weight: 500;
+	box-shadow: 3px 2px 6px 4px rgba(0, 0, 0, 0.418);
+	display: block;
+	width: 250px;
+	margin: 10px ;
+}
+#btn_plano:hover{
+	background-color: #80276c;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	transition: .4s;
+}
+@media(max-width: 800px){
+	.headline{
+		padding: 20px;
+		
+	}
+	.texto-na-imagem{
+		font-size: 1.8rem;
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 700px){
+		
+	.texto-na-imagem{
+		font-size: 1.6rem;
+	}
+}
+@media(max-width: 600px){
+	
+	.texto-na-imagem{
+		font-size: 2rem;
+	}
+	.headline{
+		text-align: center;
+		position: absolute;
+		margin-top: -150%;
+		width: 100%;
+		z-index: 100;
+		
+	}
+	.headline a{
+		text-align: center;
+		position: absolute;
+		width: 90%;
+		margin: auto;
+		
+	}
+}
+/*---------------------------------Como funciona?------------------------------------*/
+.paragrafo{
+	position: absolute;
+	background-color: #9c308585;
+	margin-top: -300px;
+	border-radius: 5px;
+	color: #fff;
+	padding: 0;
+	font-size: 2.5rem;
+	margin-left: 40px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	text-shadow: -2px 2px 4px black
+}
+.box-funcionamento{
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 20px;
+}
+.funcionamento{
+	display: flex;
+	align-items: center;
+}
+.titulo-funcionamento{
+	text-align: center;
+}
+.h1-funcionamento{
+    font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	color: #000000c7;
+    padding: 0 15px;
+    margin: 50px 0 40px;
+    border-left: 10px solid #9C117E;
+    border-right: 10px solid #9C117E;
+    display: inline-block;
+}
+.section-funcionamento h3{
+	margin-top: 20px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	color:#000000c7 ;
+}
+.section-funcionamento p{
+	margin:5px;
+    padding: 10px;
+    color: #000000da;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	text-align: center;
+}
+.funcionamento i{
+	font-size: 2rem;
+}
+@media (max-width:720px) {
+	.funcionamento{
+		display: block;
+		align-items: center;
+	}
+	.titulo-funcionamento{
+		margin-top: 10px;
+		padding: 0;
+	}
+	.funcionamento i{
+		margin-top:10px;
+	}
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-size:2rem;
+	padding-top: 10px;
+}
+p{
+    padding: 20px;
+    color: rgb(0, 0, 0)
+}
+hr{
+	width:90% ;
+	margin: auto;
+	height: 5px;
+	background-color: #9C117E;
+	border-radius: 10px;
+}
+/*-------------------------------Foto Amanda------------------------------------*/
+
+.titulo-lista-clube{
+	text-align: center;
+}
+.titulo-lista-clube h3{
+	padding: 0 15px;
+    margin: 50px 30px 40px 30px;
+    border-left: 10px solid #9C117E;
+    border-right: 10px solid #9C117E;
+    display: inline-block;font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	color: #000000c7;
+}
+.secao_foto-e-lista h3{
+	color:#9C117E;
+	font-size: 2rem;
+	text-align: center;
+	margin: 40px 10px 10px 10px;
+}
+.foto-facai{
+	height: 400px;
+	width: 400px;
+	margin: 30px;
+	
+}
+.fotofacai{
+	width: 100%;
+	height: 100%;
+}
+.foto-e-lista{
+	display: flex;
+}
+.secao_foto-e-lista p{
+
+	
+	font-size: 1rem;
+	text-align: left;
+}
+.lista{
+	margin: 30px;
+}
+.lista-clube i{
+	font-size: 1.4rem;
+}
+.lista-clube li{
+	font-size: 1.2rem;
+	text-align: justify;
+	font-weight: 400;
+	font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+	color:#000000c7;
+
+}
+
+@media(max-width:850px){
+	.foto-e-lista{
+		display: block;
+	}
+	.foto-facai{
+		position: relative;
+		margin: auto;
+	}
+	.secao_foto-e-lista li{
+		text-align: center;
+	}
+}
+@media(max-width:430px){
+	.foto-facai{
+		height: 350px;
+		width: 350px;
+		
+	}
+}
+@media(max-width:380px){
+	.foto-facai{
+		height: 300px;
+		width: 300px;
+		
+	}
+}
+/*--------------------------------Garantia-------------------------------------*/
+
+.titulo-garantia{
+	text-align: center;
+}
+.titulo-garantia h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	color: #000000c7;
+	padding: 0 15px;
+    margin: 50px 30px 40px 30px;
+    border-left: 10px solid #9C117E;
+    border-right: 10px solid #9C117E;
+    display: inline-block;
+}
+.section-garantia{
+	display: flex;
+	align-items: center;
+	margin: 5px 20px 5px 20px;
+}
+.section-garantia h3{
+	margin:10px 20px 20px 20px;
+    padding: 20px;
+    color: #000000c7;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
+	font-size: 1.1rem;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.section-garantia i{
+	font-size: 3rem;
+	color: #9C117E;
+	margin: 10px ;
+}
+
+
+@media(max-width:900px){
+	.section-garantia{
+		display: block;
+		margin:0;
+	}
+	.box-garantia{
+		font-size: 0.9rem;
+		margin:auto;
+		width:60%;
+		text-align: center;
+	}
+	.section-garantia h3{
+		margin:30px 0px 10px 0px;
+	}
+	.section-garantia i{
+		margin: 0;
+	}
+}
+@media(max-width:600px){
+	.box-garantia{
+		width:70%;
+	}
+	.titulo-garantia h3{
+		margin: 50px 30px 10px 30px;
+	}
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.section-proximos-envios{
+	text-align: center;
+	height: 350px;
+	margin-top: 40px;
+}
+.section-proximos-envios h3{
+	font-size: 2rem;
+	color: #000000d3;
+	padding: 0 15px;
+    margin: 50px 30px 40px 30px;
+    
+    border-bottom: 5px solid #9C117E;
+    display: inline-block;
+}
+
+
+/*--------------------*/
+.titulo-btn{
+	text-align: center;
+}
+.titulo-btn h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	color: #000000c7;
+	padding: 0 15px;
+    margin: 50px 30px 20px 30px;
+    border-left: 10px solid #9C117E;
+    border-right: 10px solid #9C117E;
+    display: inline-block;
+}
+
+.section-btn{
+	text-align: center;
+	padding: 20px;
+	height: 300px;
+	
+}
+
+.btn-plano1{
+	background-color: #fcb037;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: 5px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	width: 150px;
+}
+
+@media(max-width:500px){
+	.btn-plano1{
+		font-size: 1.3rem;
+		padding: 10px;;
+	}
+}
+
+/*--------------------*/
+
+
+.section-video{
+	height: 300px;
+}
+
+
+
+/*--------------------------------Faq-------------------------------*/
+
+
+.faq {
+	text-align: center;
+	padding: 20px;
+}
+.titulo-faq {
+	font-size: 1.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+#faq-box1 h1, #faq-box2 h1, #faq-box3 h1, #faq-box4 h1, #faq-box5 h1, #faq-box6 h1{
+	color: #000000ce;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid #9C117E;
+	border-radius: 10px 10px 0px 0px;
+	padding: 10px;
+}
+#duvida1, #duvida2, #duvida3, #duvida4, #duvida5, #duvida6{
+	display: none;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	background-color: #9C117E;
+	color: #fff;
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+
+
+/*--------------------*/
+
+.resposta{
+	margin-top:40px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+.resposta a{
+	color: #9C117E;
+	
+}
+/*--------------------*/
+
+
+
+
+
+
+
+.btn_whatsapp{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:20px;
+	left:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: -2px 1px 7px 2px #00000071;
+	z-index:900;
+}
+.btn_whatsapp i{
+	margin-top:10px
+}
+@media(max-width:500px){
+	.btn_whatsapp{
+		width:43px;
+		height:43px;
+		bottom:20px;
+		font-size:30px;
+	}
+	.btn_whatsapp i{
+		margin-top:5px
+	}
+}
+/*------------------------------------------------------------------------*/
